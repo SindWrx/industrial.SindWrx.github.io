@@ -1,0 +1,54 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Pro Industry
+        script(src="bower_components/webcomponentsjs/webcomponents-lite.min.js")
+        link(rel="stylesheet" href="styles/styles.css")
+    body
+        .wrapper
+            .header
+                h1.header__heading 
+                    span.header__pro Pro
+                    | Industry
+                h5.header__sub-heading INDUSTRIAL C O.
+            
+            .block-main-video
+                .main-text
+                    h2.main-text__heading Профессиональные
+                    p.main-text__metal-processing Строительные Услуги
+                video.video-block(autoplay loop muted)
+                    source(src="video/downtown_view_4k.mp4")
+            
+            include blocks/menu.pug
+
+            include blocks/welcome-block.pug
+            
+            include blocks/services-block.pug
+            
+            include blocks/reasons-block.pug
+            
+            include blocks/our-work-block.pug
+
+        footer.footer
+            p.rights
+                span.rights__text-pro Pro
+                | INDUSTRY © 2015 
+                span.rights__char-dot . 
+                | Все права защищены
+            adress.adress
+                p.adress__text 
+                    | 28 JACKSON BLVD STE 1020
+                    br
+                    | CHICAGO IL 60604-2340
+            .share
+                a.share__link.share__link_facebook(href="facebook.com") Facebook
+                a.share__link.share__link_twiter(href="twiter.com") Twiter
+                a.share__link.share__link_vk(href="vk.com") Vk
+                a.share__link.share__link_google(href="Google.com") Google
+
+        .map
+            .map-image
+        script(src="script/jquery-3.1.1.min.js")
+        script(src="script/setEqualHeight.js")
+

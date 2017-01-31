@@ -1,0 +1,20 @@
+menu-link-text-color = #3c3c3c;
+menu-link-text-color-hover = #ffffff;
+menu-link-background-color = #f8bc27;
+.menu__block
+	display flex;
+	justify-content center;
+.menu__cell
+	white-space nowrap;
+	list-style none;
+.menu__link
+	display block;
+	text-decoration none;
+	color menu-link-text-color;
+	padding 20px 30px;
+	transition all .3s ease;
+	text-transform uppercase;
+	font-size 1.25em
+	&:hover
+		background-color menu-link-background-color;
+		color menu-link-text-color-hover;

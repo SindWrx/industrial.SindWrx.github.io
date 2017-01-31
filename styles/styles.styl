@@ -1,0 +1,115 @@
+*
+    margin 0
+    padding 0
+    border 0
+    outline 0
+body
+    font-size 1em
+.wrapper
+    width 100%
+    font-family: Palatino Linotype, Arial, serif
+/* Стили шапки */
+.header
+    width 100%
+    padding 40px 0
+    background-color rgba(0,0,0,.6)
+    position absolute 
+    z-index 1
+    text-align center
+    text-transform uppercase
+    color #fff
+.header__heading
+    font-size 3em
+.header__pro
+    font-size 1em
+    color #ecbd32
+.header__sub-heading
+    font-size 1em
+/* Стили видео блока */
+.block-main-video
+    position: relative
+.video-block
+    width 100%
+    background #ccc
+    display block
+    margin auto
+/* Стили встечающего блока main-text */
+.main-text
+    color #fff 
+    position absolute 
+    left 0 
+    top 50% 
+    right 0 
+    bottom: 0
+    margin auto
+    text-transform uppercase
+    text-align center  
+.main-text__metal-processing
+    font-size 1.5em 
+.main-text__heading
+    font-size 3.5em
+    margin-bottom 10px
+/* Стили меню */
+@import menu
+/* Стили блока приветствия */
+@import welcome-block
+/* Блок услуг и блок о нашем сервисе */
+@import services-block
+/* Блок преимуществ клиентов */
+@import reasons-block
+/* Блок о нашей работе */
+@import our-work-block
+/* Футер и Карта */
+.footer
+    height 100px
+    background-color rgba(0,0,0,.6)
+    margin-top -100px
+    color #fff
+    width 100%
+    text-transform uppercase
+    font-size 0.875em
+    display flex
+    justify-content space-around
+    align-items: center
+.rights__text-pro
+    color #f6bc26
+.rights__char-dot
+    font-size 30px
+.adress
+    background url('../images/footer/earth-orange.png') no-repeat
+    background-size 30px 30px
+    padding 0 40px
+    margin-right 30px
+.share
+    display: flex
+    flex-direction: row
+.share__link
+    width 50px
+    height 50px
+    font-size 0
+.share__link_facebook
+    background url('../images/footer/facebook.png')
+.share__link_twiter
+    background url('../images/footer/twitter.png')
+.share__link_vk
+    background url('../images/footer/vk.png')
+.share__link_google
+    background url('../images/footer/google.png')
+.map-image
+    background url('../images/map/map.png') no-repeat
+    background-position 50% 0
+    background-size 100%
+    height 150px
+    
+@media only screen and (max-device-width: 425px)
+    .welcome-block__discription
+        font-size .6em
+    .welcome-block__heading
+        font-size 1.5em
+        padding 0 20px
+    .welcome-block__sub-heading
+        font-size .8em
+        padding 0 20px
+    .welcome-block__button-more
+        padding: 15px 40px;
+        font-size: 10px;
